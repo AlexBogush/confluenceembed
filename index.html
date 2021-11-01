@@ -381,9 +381,7 @@
     s.onload = s.onreadystatechange = function () {
       // can add logic to load widget or not
       wh = new window.embedConfluenceWidget();
-    };
-    var h = document.getElementsByTagName('head')[0]; h.appendChild(s);
-
+	    
     var hidden = true;
     function showHide() {
       if (hidden) {
@@ -398,6 +396,9 @@
       hidden = false;
       wh.show(searchOptions);
     }
+    };
+    var h = document.getElementsByTagName('head')[0]; h.appendChild(s);
+
   </script>
 
 
